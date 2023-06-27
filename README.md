@@ -36,7 +36,7 @@ Inside the project directory, create the following directories and files:
 
 I have already done setup in the app.js file that I have provided.
 
-> **Note:** In my system, the command _mongodb://localhost:27017_ was unable to connect my file to mongodb so I renamed it to _mongodb://127.0.0.1:27017_ 
+> **Note:** In my system, the command _mongodb://localhost:27017_ was unable to connect my file to MongoDB so I renamed it to _mongodb://127.0.0.1:27017_ 
 after which the application works.
 
 ### Step 4: Create the EJS templates
@@ -57,7 +57,7 @@ Inside the public directory, create a file named styles.css and add CSS styles f
 
 > styles.css is provided in public folder. Although I did not spend much time in writing this, pardon the not so beautiful interface :p
 
-### Step 6: To run the this web application, follow these steps:
+### Step 6: To run the web application, follow these steps:
 1. Make sure that MongoDB is running on your machine.
 2. Open a terminal or command prompt and navigate to the project directory.
 3. Run the following command to start the server:
@@ -95,8 +95,8 @@ Inside the public directory, create a file named styles.css and add CSS styles f
       - **Database Storage**: The generated short URL, along with the corresponding long URL and creation timestamp, is stored in the MongoDB database using the 
         `Url` model.
 
-- Search Functionality:
-   - **MongoDB Atlas Search**: The project incorporates MongoDB Atlas Search to enable keyword-based search functionality. It creates an index on the desired 
+   - Search Functionality:
+      - **MongoDB Atlas Search**: The project incorporates MongoDB Atlas Search to enable keyword-based search functionality. It creates an index on the desired 
      fields (e.g., `longUrl`) and uses the `$text` operator and `$search` operator to perform text-based search queries.
 
 ## My learning takeaways
