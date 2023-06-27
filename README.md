@@ -1,4 +1,4 @@
-# URL Shortener with search based functionality
+# URL Shortener
 The user flow in this project involves entering a long URL through a form on the front-end. The back-end receives the long URL, generates a short URL 
 using the shortening algorithm, and stores both the long and short URLs in the database. The short URL is then presented to the user, who can share or 
 use it to access the original long URL. Additionally, users can search for previously created URLs by entering keywords. The back-end performs a search 
@@ -7,10 +7,10 @@ query using MongoDB Atlas Search, retrieves matching results from the database, 
 Overall, the project provides a complete URL shortening solution with the ability to generate short URLs, store them in a database, and offer search 
 functionality to retrieve URLs based on keywords.It also has a search based functionalty which has been implemented using MongoDB Atlas search.
 
-# How to run this project
+## How to run this project
 First, make sure you have Node.js and MongoDB installed on your machine. Then, follow these steps:
 
-## Step 1: Set up the project
+### Step 1: Set up the project
 
 Create a new directory for your project and navigate into it.
 
@@ -20,7 +20,7 @@ npm init -y
 npm install express ejs mongoose
 ```
 
-## Step 2: Create the directory structure
+### Step 2: Create the directory structure
 
 Inside the project directory, create the following directories and files:
 
@@ -32,14 +32,14 @@ app.js file: The main server-side JavaScript file.
 
 > app.js is provided.
 
-## Step 3: Set up the server
+### Step 3: Set up the server
 
 I have already done setup in the app.js file that I have provided.
 
 > **Note:** In my system, the command 'mongodb://localhost:27017' was unable to connect my file to mongodb so I renamed it to 'mongodb://127.0.0.1:27017', 
 after which the application works.
 
-## Step 4: Create the EJS templates
+### Step 4: Create the EJS templates
 
 Inside the views directory, create the following EJS templates:
 
@@ -51,13 +51,13 @@ Inside the views directory, create the following EJS templates:
 
 > index.ejs, shortened.ejs and search.ejs are provided in views folder.
 
-## Step 5: Create the CSS file
+### Step 5: Create the CSS file
 
 Inside the public directory, create a file named styles.css and add CSS styles for the application.
 
 > styles.css is provided in public folder. Although I did not spend much time in writing this, pardon the ugly interface :p
 
-## Step 6: To run the this web application, follow these steps:
+### Step 6: To run the this web application, follow these steps:
 1. Make sure that MongoDB is running on your machine.
 2. Open a terminal or command prompt and navigate to the project directory.
 3. Run the following command to start the server:
@@ -69,7 +69,7 @@ Inside the public directory, create a file named styles.css and add CSS styles f
 6. You can enter a long URL in the input field and click the "Shorten" button to generate a short URL. The shortened URL will be displayed on the page.
 7. You can also search for URLs containing a specific keyword, the MongoDB Atlas search has been implemented.
 
-# Internal working of the project
+## Internal working of the project
 - Components used and their purpose:
 
    - Front-End:
@@ -99,12 +99,12 @@ Inside the public directory, create a file named styles.css and add CSS styles f
    - **MongoDB Atlas Search**: The project incorporates MongoDB Atlas Search to enable keyword-based search functionality. It creates an index on the desired 
      fields (e.g., `longUrl`) and uses the `$text` operator and `$search` operator to perform text-based search queries.
 
-# My learning takeaways
+## My learning takeaways
 As this was my first project in which both front end and backend come to use, I learned quite a lot from this. I heartily thank ACM IIT Roorkee campus group for 
 providing this opportunity which not only increased my knowledge about database management but also about networking and ports. As a guy from non-CSE 
 background this project helped me understand some very basic but important concepts which will definitely come to use in my path ahead. 
 
-# Resources and References
+## Resources and References
 https://www.cloudflare.com/learning/network-layer/what-is-a-computer-port/
 
 https://www.w3schools.com/nodejs/
