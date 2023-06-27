@@ -70,7 +70,7 @@ Inside the public directory, create a file named styles.css and add CSS styles f
 7. You can also search for URLs containing a specific keyword, the MongoDB Atlas search has been implemented.
 
 # Internal working of the project
-Components used and their purpose:
+- Components used and their purpose:
 
 1. Front-End:
    - **HTML**: Defines the structure of the web pages and the form to input long URLs.
@@ -87,7 +87,7 @@ Components used and their purpose:
    - **Operations**: The project performs CRUD (Create, Read, Update, Delete) operations on the `Url` collection. It creates new URL entries, retrieves URLs 
      based on search or specific conditions, and deletes URLs when required.
 
-Algorithms and functionalities:
+- Algorithms and functionalities:
 
 1. URL Shortening Logic:
    - **Shortening Algorithm**: The project uses a custom algorithm to generate short URLs based on the provided long URLs. The algorithm typically involves 
