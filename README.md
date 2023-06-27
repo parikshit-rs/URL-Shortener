@@ -67,36 +67,36 @@ Inside the public directory, create a file named styles.css and add CSS styles f
 4. The server will start running on http://localhost:3000.
 5. Open a web browser and visit http://localhost:3000 to access the URL shortener application.
 6. You can enter a long URL in the input field and click the "Shorten" button to generate a short URL. The shortened URL will be displayed on the page.
-7. You can also search for URLs containing a specific keyword, the mongoDB Atlas search has been implemented.
+7. You can also search for URLs containing a specific keyword, the MongoDB Atlas search has been implemented.
 
 # Internal working of the project
 Components used and their purpose:
 
 1. Front-End:
-   - HTML: Defines the structure of the web pages and the form to input long URLs.
-   - CSS: Styles the web pages to provide a visually appealing and user-friendly interface.
-   - JavaScript: Handles user interactions, such as form submission, AJAX requests to the server, and displaying the generated shortened URLs.
+   - **HTML**: Defines the structure of the web pages and the form to input long URLs.
+   - **CSS**: Styles the web pages to provide a visually appealing and user-friendly interface.
+   - **JavaScript**: Handles user interactions, such as form submission, AJAX requests to the server, and displaying the generated shortened URLs.
 
 2. Back-End:
-   - Node.js: A JavaScript runtime environment that allows running JavaScript code on the server-side.
-   - Express.js: A web framework for Node.js that simplifies the creation of web applications and APIs.
-   - MongoDB: A NoSQL database used to store and retrieve URL data.
+   - **Node.js**: A JavaScript runtime environment that allows running JavaScript code on the server-side.
+   - **Express.js**: A web framework for Node.js that simplifies the creation of web applications and APIs.
+   - **MongoDB**: A NoSQL database used to store and retrieve URL data.
 
 3. Database:
-   - Schema: The `Url` model defines the structure of the URL data stored in the database, including the long URL, short URL, and creation timestamp.
-   - Operations: The project performs CRUD (Create, Read, Update, Delete) operations on the `Url` collection. It creates new URL entries, retrieves URLs 
+   - **Schema**: The `Url` model defines the structure of the URL data stored in the database, including the long URL, short URL, and creation timestamp.
+   - **Operations**: The project performs CRUD (Create, Read, Update, Delete) operations on the `Url` collection. It creates new URL entries, retrieves URLs 
      based on search or specific conditions, and deletes URLs when required.
 
 Algorithms and functionalities:
 
 1. URL Shortening Logic:
-   - Shortening Algorithm: The project uses a custom algorithm to generate short URLs based on the provided long URLs. The algorithm typically involves 
+   - **Shortening Algorithm**: The project uses a custom algorithm to generate short URLs based on the provided long URLs. The algorithm typically involves 
      generating a unique identifier, encoding it, and appending it to a base URL to create the short URL.
-   - Database Storage: The generated short URL, along with the corresponding long URL and creation timestamp, is stored in the MongoDB database using the 
+   - **Database Storage**: The generated short URL, along with the corresponding long URL and creation timestamp, is stored in the MongoDB database using the 
      `Url` model.
 
 2. Search Functionality:
-   - MongoDB Atlas Search: The project incorporates MongoDB Atlas Search to enable keyword-based search functionality. It creates an index on the desired 
+   - **MongoDB Atlas Search**: The project incorporates MongoDB Atlas Search to enable keyword-based search functionality. It creates an index on the desired 
      fields (e.g., `longUrl`) and uses the `$text` operator and `$search` operator to perform text-based search queries.
 
 # My learning takeaways
