@@ -10,7 +10,7 @@ functionality to retrieve URLs based on keywords.It also has a search based func
 # How to run this project
 First, make sure you have Node.js and MongoDB installed on your machine. Then, follow these steps:
 
--Step 1: Set up the project
+Step 1: Set up the project
 
 Create a new directory for your project and navigate into it.
 
@@ -19,7 +19,7 @@ Run the following command (in Git Bash) to initialize a new Node.js project and 
 	npm init -y
 	npm install express ejs mongoose
 
--Step 2: Create the directory structure
+Step 2: Create the directory structure
 
 Inside the project directory, create the following directories and files:
 
@@ -27,27 +27,27 @@ views directory: Contains the EJS templates.
 public directory: Contains static files such as CSS and client-side JavaScript.
 app.js file: The main server-side JavaScript file.(app.js is provided)
 
--Step 3: Set up the server
+Step 3: Set up the server
 
 I have already done setup in the app.js file that I have provided.
 
-Note: In my system the command 'mongodb://localhost:27017' was unable to connect my file to mongodb so I renamed it to 'mongodb://127.0.0.1:27017', 
+> In my system the command 'mongodb://localhost:27017' was unable to connect my file to mongodb so I renamed it to 'mongodb://127.0.0.1:27017', 
 after which the application works.
 
--Step 4: Create the EJS templates
+Step 4: Create the EJS templates
 
 Inside the views directory, create the following EJS templates:
 
-index.ejs: Contains the HTML form for URL input.(index.ejs is provided)
-shortened.ejs: Displays the shortened URL.(shortened.ejs is provided)
-search.ejs: Displays the search results.(search.ejs is provided)
+index.ejs: Contains the HTML form for URL input.(index.ejs is provided in views folder)
+shortened.ejs: Displays the shortened URL.(shortened.ejs is provided in views folder)
+search.ejs: Displays the search results.(search.ejs is provided is provided in views folder)
 
--Step 5: Create the CSS file
+Step 5: Create the CSS file
 
 Inside the public directory, create a file named styles.css and add CSS styles for the application.
-(styles.css is provided. Although I did not spend much time in writing this, pardon the ugly interface :p)
+(styles.css is provided in public folder. Although I did not spend much time in writing this, pardon the ugly interface :p)
 
--Step 6: To run the this web application, follow these steps:
+Step 6: To run the this web application, follow these steps:
 1. Make sure that MongoDB is running on your machine.
 2. Open a terminal or command prompt and navigate to the project directory.
 3. Run the following command to start the server:
@@ -58,3 +58,4 @@ Inside the public directory, create a file named styles.css and add CSS styles f
 5. Open a web browser and visit http://localhost:3000 to access the URL shortener application.
 6. You can enter a long URL in the input field and click the "Shorten" button to generate a short URL. The shortened URL will be displayed on the page.
 7. You can also search for URLs containing a specific keyword, the mongoDB Atlas search has been implemented.
+
