@@ -3,60 +3,60 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-// Connect to MongoDB
+// To onnect to MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-// Check MongoDB connection status
+// To check MongoDB connection status
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
-// Create a URL schema
+// To create a URL schema
 const urlSchema = new mongoose.Schema({
   longUrl: String,
   shortUrl: String,
 });
 
-// Create a URL model
+// To create a URL model
 const Url = mongoose.model('Url', urlSchema);
 
-// Configure EJS as the view engine
+// To configure EJS as the view engine
 app.set('view engine', 'ejs');
 
-// Middleware to parse request body
+// For Middleware to parse request body
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from the "public" directory
+// To serve static files from the "public" directory
 app.use(express.static('public'));
 
-// Home page
+// For Home page
 app.get('/', (req, res) => {
   res.render('index');
 });
 
-// URL shortening route
+// For URL shortening route
 app.post('/shorten', async (req, res) => {
   const { longUrl } = req.body;
 
-  // Generate a short URL
+  // To generate a short URL
   const shortUrl = generateShortUrl();
 
-  // Create a new URL entry in the database
+  // To create a new URL entry in the database
   await Url.create({ longUrl, shortUrl });
 
   res.render('shortened', { shortUrl });
 });
 
-// URL redirection route
+// For URL redirection route
 app.get('/:shortUrl', async (req, res) => {
   const { shortUrl } = req.params;
 
-  // Find the long URL based on the short URL
+  // To find the long URL based on the short URL
   const url = await Url.findOne({ shortUrl });
 
   if (url) {
@@ -66,11 +66,11 @@ app.get('/:shortUrl', async (req, res) => {
   }
 });
 
-// URL search route
+// For URL search route
 app.get('/search/:keyword', (req, res) => {
   const { keyword } = req.params;
   
-  // Perform MongoDB Atlas Search
+  // To perform MongoDB Atlas Search
   Url.find({ $text: { $search: keyword } })
     .then((results) => {
       res.render('search', { keyword, results });
@@ -82,7 +82,7 @@ app.get('/search/:keyword', (req, res) => {
 });
 
 
-// Start the server
+// To start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
