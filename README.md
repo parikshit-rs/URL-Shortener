@@ -111,6 +111,8 @@ https://www.w3schools.com/nodejs/
 
 https://www.geeksforgeeks.org/express-js/
 
+https://www.enjoyalgorithms.com/blog/design-a-url-shortening-service-like-tiny-url
+
 https://www.techtarget.com/searchdatamanagement/definition/MongoDB
 
 https://www.mongodb.com/docs/atlas/atlas-search/atlas-search-overview/
