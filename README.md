@@ -36,7 +36,7 @@ Inside the project directory, create the following directories and files:
 
 I have already done setup in the app.js file that I have provided.
 
-> **Note:** In my system, the command _mongodb://localhost:27017_ was unable to connect my file to mongodb so I renamed it to _mongodb://127.0.0.1:27017)_ 
+> **Note:** In my system, the command _mongodb://localhost:27017_ was unable to connect my file to mongodb so I renamed it to _mongodb://127.0.0.1:27017_ 
 after which the application works.
 
 ### Step 4: Create the EJS templates
