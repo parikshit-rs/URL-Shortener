@@ -10,7 +10,7 @@ functionality to retrieve URLs based on keywords.It also has a search based func
 # How to run this project
 First, make sure you have Node.js and MongoDB installed on your machine. Then, follow these steps:
 
-Step 1: Set up the project
+## Set up the project
 
 Create a new directory for your project and navigate into it.
 
