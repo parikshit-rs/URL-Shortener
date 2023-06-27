@@ -1,2 +1,3 @@
-# URL-Shortener
-A URL Shortener application with search based functionality.
+# PROJECT TITLE
+URL Shortener with search based functionality.
+# PROJECT DESCRIPTION
