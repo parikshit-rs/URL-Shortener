@@ -15,9 +15,10 @@ First, make sure you have Node.js and MongoDB installed on your machine. Then, f
 Create a new directory for your project and navigate into it.
 
 Run the following command (in Git Bash) to initialize a new Node.js project and install the required dependencies:
-
-	npm init -y
-	npm install express ejs mongoose
+```
+npm init -y
+npm install express ejs mongoose
+```
 
 ## Step 2: Create the directory structure
 
@@ -35,7 +36,7 @@ app.js file: The main server-side JavaScript file.
 
 I have already done setup in the app.js file that I have provided.
 
-> In my system the command 'mongodb://localhost:27017' was unable to connect my file to mongodb so I renamed it to 'mongodb://127.0.0.1:27017', 
+> **Note:** In my system, the command 'mongodb://localhost:27017' was unable to connect my file to mongodb so I renamed it to 'mongodb://127.0.0.1:27017', 
 after which the application works.
 
 ## Step 4: Create the EJS templates
@@ -60,9 +61,9 @@ Inside the public directory, create a file named styles.css and add CSS styles f
 1. Make sure that MongoDB is running on your machine.
 2. Open a terminal or command prompt and navigate to the project directory.
 3. Run the following command to start the server:
-   
+   ```
    node app.js
-   
+   ```
 4. The server will start running on http://localhost:3000.
 5. Open a web browser and visit http://localhost:3000 to access the URL shortener application.
 6. You can enter a long URL in the input field and click the "Shorten" button to generate a short URL. The shortened URL will be displayed on the page.
@@ -71,17 +72,17 @@ Inside the public directory, create a file named styles.css and add CSS styles f
 # Internal working of the project
 Components used and their purpose:
 
-1. Front-End (HTML, CSS, and JavaScript):
+1. Front-End:
    - HTML: Defines the structure of the web pages and the form to input long URLs.
    - CSS: Styles the web pages to provide a visually appealing and user-friendly interface.
    - JavaScript: Handles user interactions, such as form submission, AJAX requests to the server, and displaying the generated shortened URLs.
 
-2. Back-End (Node.js, Express.js, and MongoDB):
+2. Back-End:
    - Node.js: A JavaScript runtime environment that allows running JavaScript code on the server-side.
    - Express.js: A web framework for Node.js that simplifies the creation of web applications and APIs.
    - MongoDB: A NoSQL database used to store and retrieve URL data.
 
-3. Database (MongoDB):
+3. Database:
    - Schema: The `Url` model defines the structure of the URL data stored in the database, including the long URL, short URL, and creation timestamp.
    - Operations: The project performs CRUD (Create, Read, Update, Delete) operations on the `Url` collection. It creates new URL entries, retrieves URLs 
      based on search or specific conditions, and deletes URLs when required.
@@ -97,3 +98,47 @@ Algorithms and functionalities:
 2. Search Functionality:
    - MongoDB Atlas Search: The project incorporates MongoDB Atlas Search to enable keyword-based search functionality. It creates an index on the desired 
      fields (e.g., `longUrl`) and uses the `$text` operator and `$search` operator to perform text-based search queries.
+
+# My learning takeaways
+As this was my first project in which both front end and backend come to use, I learned quite a lot from this. I heartily thank ACM IIT Roorkee campus group for 
+providing this opportunity which not only increased my knowledge about database management but also about networking and ports. As a guy from non-CSE 
+background this project helped me understand some very basic but important concepts which will definitely come to use in my path ahead. 
+
+# Resources and References
+https://www.cloudflare.com/learning/network-layer/what-is-a-computer-port/
+
+https://www.w3schools.com/nodejs/
+
+https://www.geeksforgeeks.org/express-js/
+
+https://www.techtarget.com/searchdatamanagement/definition/MongoDB
+
+https://www.mongodb.com/docs/atlas/atlas-search/atlas-search-overview/
+
+https://youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G
+
+https://youtu.be/W6NZfCO5SIk
+
+https://www.youtube.com/watch?v=PkZNo7MFNFg
+
+https://youtu.be/BLl32FvcdVM
+
+https://youtu.be/TlB_eWDSMt4
+
+https://youtu.be/SccSCuHhOw0
+
+https://youtu.be/VM-2xSaDxJc
+
+https://youtu.be/oSIv-E60NiU
+
+https://youtu.be/DZBGEVgL2eE
+
+https://www.youtube.com/watch?v=0686Md5Cj9k&t=226s
+
+https://youtu.be/ANeOfRDPOfw
+
+https://youtu.be/J6mDkcqU_ZE
+
+https://youtu.be/SLpUKAGnm-g
+
+https://youtu.be/4WvX9dBjiJo
