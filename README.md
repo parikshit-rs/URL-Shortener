@@ -24,11 +24,11 @@ npm install express ejs mongoose
 
 Inside the project directory, create the following directories and files:
 
-views directory: Contains the EJS templates.
+- views directory: Contains the EJS templates.
 
-public directory: Contains static files such as CSS and client-side JavaScript.
+- public directory: Contains static files such as CSS and client-side JavaScript.
 
-app.js file: The main server-side JavaScript file.
+- app.js file: The main server-side JavaScript file.
 
 > app.js is provided.
 
@@ -55,7 +55,7 @@ Inside the views directory, create the following EJS templates:
 
 Inside the public directory, create a file named styles.css and add CSS styles for the application.
 
-> styles.css is provided in public folder. Although I did not spend much time in writing this, pardon the ugly interface :p
+> styles.css is provided in public folder. Although I did not spend much time in writing this, pardon the not so beautiful interface :p
 
 ### Step 6: To run the this web application, follow these steps:
 1. Make sure that MongoDB is running on your machine.
