@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Search Results for "<%= keyword %>":</h1>
+
+<ul>
+  <% results.forEach((result) => { %>
+    <li>
+      <p><a href="<%= result.longUrl %>"><%= result.longUrl %></a></p>
+      <p>Short URL: <a href="<%= result.shortUrl %>"><%= result.shortUrl %></a></p>
+    </li>
+  <% }) %>
+</ul>
+  <% } %>
+</body>
+</html>
