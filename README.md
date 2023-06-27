@@ -5,7 +5,7 @@ use it to access the original long URL. Additionally, users can search for previ
 query using MongoDB Atlas Search, retrieves matching results from the database, and presents them to the user.
 
 Overall, the project provides a complete URL shortening solution with the ability to generate short URLs, store them in a database, and offer search 
-functionality to retrieve URLs based on keywords.It also has a search based functionalty which has been implemented using MongoDB Atlas search.
+functionality to retrieve URLs based on keywords. It also has a search based functionalty which has been implemented using MongoDB Atlas search.
 
 ## How to run this project
 First, make sure you have Node.js and MongoDB installed on your machine. Then, follow these steps:
