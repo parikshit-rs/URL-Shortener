@@ -10,7 +10,7 @@ Overall, the project provides a complete URL shortening solution with the abilit
 functionality which has been implemented using MongoDB Atlas search in order to retrieve URLs based on keywords.
 
 ## How to run this project
-First, make sure you have Node.js and MongoDB installed on your machine. Then, follow these steps:
+First, make sure you have Git, Node.js and MongoDB installed on your machine. Then, follow these steps:
 
 ### Step 1: Set up the project
 
@@ -66,7 +66,7 @@ Inside the public directory, create a file named styles.css and add CSS styles f
    ```
    node app.js
    ```
-4. The server will start running on http://localhost:3000.
+4. The server will start running on http://localhost:3000
 5. Open a web browser and visit http://localhost:3000 to access the URL shortener application.
 6. You can enter a long URL in the input field and click the "Shorten" button to generate a short URL. The shortened URL will be displayed on the page.
 7. You can also search for URLs containing a specific keyword, the MongoDB Atlas search has been implemented.
